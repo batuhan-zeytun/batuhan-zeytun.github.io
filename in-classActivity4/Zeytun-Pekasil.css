@@ -1,0 +1,41 @@
+.advertisement
+{
+	width:100px;
+	height:150px; 
+	border-color:black;
+	border-width:2px; 
+	background-color:gray; 
+	color:white;
+	position: absolute;
+  	top: 10px;
+  	left: 10px;
+	color: black;
+}
+
+.image img
+{
+	width:250px;
+	height:250px;
+	float: left;
+}
+
+.content
+{
+	margin-left: 210px;
+	margin-right: 210px;
+	font-size: 23px;
+}
+
+.header
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 250px;
+}
+
+.head
+{
+	text-align: center;
+	margin-top: 50px;
+}
