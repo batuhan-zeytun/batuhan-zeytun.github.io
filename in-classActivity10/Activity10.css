@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+form {
+  max-width: 500px;
+}
+
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 225px 1fr;
+  column-gap: 16px;
+  row-gap: 8px;
+  align-items: center;
+}
+
+form label {
+  margin: 0;    
+}
+form input, form button {
+  width: 70%;                      
+}

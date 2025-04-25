@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity10</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="Activity10.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="Activity10.js"></script>
+</head>
+<body>
+
+  <h1>CENG311 Activity 10</h1>
+
+  <form>
+
+    <label for="language">What programming languages do you know?</label>
+    <input id="language" type="text" required>
+  
+    <label for="birthday">What is your birthday?</label>
+    <input id="birthday" type="text" required>
+  
+    <label for="email">Email Address</label>
+    <input id="email" type="email" placeholder="Enter a valid email address" required>
+
+    <label for="website">Website</label>
+    <input id="website" type="text" pattern="^(https?:\/\/|www\.)\S+$"  title="Lütfen “https://…” veya “www.” ile başlayan geçerli bir URL girin" placeholder="https://example.com" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
