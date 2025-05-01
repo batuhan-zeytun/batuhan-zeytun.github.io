@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <title>Chess World – Home</title>
+
+  <style>
+    .hero-img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .slider-caption {
+      text-align: center;
+      color: #555;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .feature-card img {
+      width: 60px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Chess World</h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About & Contact</a></li>
+          <li><a href="influencers.html">Influencers</a></li>
+          <li><a href="pieces.html">Pieces</a></li>
+          <li><a href="moves.html">Moves</a></li>
+          <li><a href="gamesites.html">Game Sites</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-slider">
+        <div>
+          <img src="https://www.regencychess.co.uk/images/how-to-set-up-a-chessboard/how-to-set-up-a-chessboard-7.jpg" alt="Chess Board" class="hero-img" />
+          <p class="slider-caption">
+            <strong>Classic Chess Board</strong><br>
+            The foundation of every great match — the chessboard itself. Learn how to properly set up a board, why square orientation matters, and how this simple checkered grid becomes a battlefield for the world’s most strategic minds.
+          </p>
+        </div>
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/JaquesCookStaunton.jpg/330px-JaquesCookStaunton.jpg" alt="Chess Pieces" class="hero-img" />
+          <p class="slider-caption">
+            <strong>All the Pieces Ready</strong><br>
+            Get to know the army of chess: the brave pawns, powerful queens, and cunning knights. Each piece has its unique role, movement, and purpose — understanding them is your first step toward mastering the game.
+          </p>
+        </div>
+        <div>
+          <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/TarjeiJS/phpbgZJn0.jpg" alt="Chess Tournament" class="hero-img" />
+          <p class="slider-caption">
+            <strong>Tournament in Progress</strong><br>
+            Experience the intensity of professional tournaments, where one wrong move could cost a world title. Explore how top players think, prepare, and perform under pressure on the global stage.
+          </p>
+        </div>
+      </div>
+    
+      <div class="hero-content" data-aos="fade-up">
+        <h2>Master the Game of Kings</h2>
+        <p>Learn strategies, explore the unique power of each piece, and step into a world where intelligence and foresight rule the board.</p>
+        <a href="pieces.html" class="btn">Explore Pieces</a>
+      </div>
+    </section>
+    
+    
+
+    <section class="features">
+      <div class="feature-card" data-aos="fade-right">
+        <img src="public/images/pawn.jpg" alt="Guide Icon">
+        <h3>Interactive Guides</h3>
+        <p>Step-by-step tutorials with animated demonstrations.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up">
+        <img src="public/images/magnus-carlsen.jpeg" alt="Influencer Icon">
+        <h3>Top Influencers</h3>
+        <p>Insights from grandmasters and top streamers.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-left">
+        <img src="public/images/chess-pieces.jpg" alt="Platform Icon">
+        <h3>Play Online</h3>
+        <p>Links to the best chess platforms on the web.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Chess World. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.4/gsap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
