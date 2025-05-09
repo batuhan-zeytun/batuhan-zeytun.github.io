@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <title>Chess World – Home</title>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-modern {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('public/images/chess-board.webp') center/cover no-repeat;
+      border-radius: 0 0 2rem 2rem;
+      overflow: hidden;
+      margin-bottom: 3rem;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(30, 30, 40, 0.7);
+      z-index: 1;
+    }
+    .hero-content-modern {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      padding: 3rem 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero-content-modern h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      text-shadow: 0 4px 24px #000a;
+    }
+    .hero-content-modern p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #e0e0e0;
+    }
+    .hero-content-modern .btn {
+      background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+      color: #232526;
+      font-weight: 600;
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 12px #0005;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .hero-content-modern .btn:hover {
+      background: linear-gradient(90deg, #ffcc33 0%, #ffb347 100%);
+      color: #111;
+      transform: translateY(-2px) scale(1.04);
+    }
+    .features-modern {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2.5rem;
+      margin: 0 auto 4rem auto;
+      max-width: 1100px;
+      padding: 0 1rem;
+    }
+    .feature-card-modern {
+      background: rgba(255,255,255,0.07);
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 32px #0002;
+      padding: 2.5rem 2rem 2rem 2rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1.5px solid #fff2;
+      backdrop-filter: blur(2px);
+    }
+    .feature-card-modern:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 40px #0004;
+      border-color: #ffcc33;
+    }
+    .feature-card-modern img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      margin-bottom: 1.2rem;
+      border-radius: 50%;
+      background: #fff3;
+      padding: 0.5rem;
+      box-shadow: 0 2px 8px #0002;
+    }
+    .feature-card-modern h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+      color: #ffcc33;
+    }
+    .feature-card-modern p {
+      color: #e0e0e0;
+      font-size: 1.05rem;
+    }
+    @media (max-width: 700px) {
+      .hero-content-modern h1 { font-size: 2.1rem; }
+      .hero-content-modern { padding: 2rem 0.5rem; }
+      .features-modern { gap: 1.2rem; }
+      .feature-card-modern { padding: 1.2rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Chess World</h1>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About & Contact</a></li>
+          <li><a href="influencers.html">Influencers</a></li>
+          <li><a href="pieces.html">Pieces</a></li>
+          <li><a href="moves.html">Moves</a></li>
+          <li><a href="gamesites.html">Game Sites</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-modern">
+      <div class="hero-overlay"></div>
+      <div class="hero-content-modern" data-aos="zoom-in">
+        <h1>Welcome to Chess World</h1>
+        <p>Step into a world of strategy, intelligence, and timeless competition. Whether you're a beginner or a grandmaster, Chess World is your home for learning, playing, and mastering the game of kings.</p>
+        <a href="moves.html" class="btn">Discover Openings</a>
+      </div>
+    </section>
+    
+    <section class="features-modern">
+      <div class="feature-card-modern" data-aos="fade-up" data-aos-delay="100">
+        <img src="public/images/pawn.jpg" alt="Guide Icon">
+        <h3>Interactive Guides</h3>
+        <p>Step-by-step tutorials and animated demonstrations to help you learn chess fundamentals and advanced tactics.</p>
+      </div>
+      <div class="feature-card-modern" data-aos="fade-up" data-aos-delay="200">
+        <img src="public/images/ruylopez.gif" alt="Opening Icon">
+        <h3>Famous Openings</h3>
+        <p>Explore legendary chess openings, their strategies, and how to use them to gain an advantage from the very first move.</p>
+      </div>
+      <div class="feature-card-modern" data-aos="fade-up" data-aos-delay="300">
+        <img src="public/images/chess-pieces.jpg" alt="Pieces Icon">
+        <h3>Know the Pieces</h3>
+        <p>Get to know the unique powers and roles of every chess piece, from the humble pawn to the mighty queen.</p>
+      </div>
+      <div class="feature-card-modern" data-aos="fade-up" data-aos-delay="400">
+        <img src="public/images/lichess_com.png" alt="Platform Icon">
+        <h3>Play Online</h3>
+        <p>Links to the best chess platforms and communities on the web. Challenge friends or play against the world!</p>
+      </div>
+      <div class="feature-card-modern" data-aos="fade-up" data-aos-delay="500">
+        <img src="public/images/queen.jpg" alt="Influencer Icon">
+        <h3>Top Influencers</h3>
+        <p>Insights, tips, and inspiration from grandmasters and top chess streamers.</p>
+      </div>
+    </section>
+
+    <section class="ajax-section" data-aos="fade-up">
+      <h2>Chess Tips</h2>
+      <ul id="tips-list"></ul>
+    </section>
+    <section class="ajax-section" data-aos="fade-up">
+      <h2>Latest Chess News</h2>
+      <ul id="news-list"></ul>
+    </section>
+    <section class="faq-section" data-aos="fade-up">
+      <h2>FAQ</h2>
+      <div id="faq-accordion">
+        <h3>What is Chess World?</h3>
+        <div><p>Chess World is your home for learning, playing, and mastering chess online.</p></div>
+        <h3>How do I play?</h3>
+        <div><p>You can start by exploring our guides and playing online with friends or the world!</p></div>
+        <h3>How can I improve?</h3>
+        <div><p>Check out our tips, openings, and play regularly to improve your skills.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Chess World. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.4/gsap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+  </script>
+
+</body>
+</html>

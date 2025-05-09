@@ -1,0 +1,264 @@
+
+:root{
+  --primary:#222;
+  --secondary:#444;
+  --accent:#eab308;
+  --bg:#f9f9f9;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:#333;line-height:1.6;}
+a{text-decoration:none;color:var(--primary);}
+ul{list-style:none;}
+.container{width:90%;max-width:1200px;margin:0 auto;}
+/* Header */
+.site-header{background:#fff;border-bottom:1px solid #ddd;position:sticky;top:0;z-index:100;}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;}
+.logo{font-size:1.75rem;font-weight:600;color:var(--primary);}
+.navbar{position:relative;}
+.nav-list{display:flex;gap:1rem;}
+.nav-list a{padding:.5rem .75rem;border-radius:4px;transition:background .3s;}
+.nav-list a:hover{background:var(--accent);color:#fff;}
+.menu-toggle{display:none;background:none;border:none;font-size:1.75rem;}
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;margin:2rem 0;}
+.hero-slider img{width:100%;display:block;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.1);}
+.hero-content h2{font-size:2.5rem;margin-bottom:1rem;color:var(--primary);}
+.hero-content p{margin-bottom:1.5rem;color:#555;}
+.btn{display:inline-block;padding:.75rem 1.5rem;background:var(--primary);color:#fff;border-radius:4px;transition:background .3s;}
+.btn:hover{background:var(--secondary);}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin:3rem 0;}
+.feature-card{background:#fff;border-radius:8px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.05);transition:transform .3s,box-shadow .3s;}
+.feature-card:hover{transform:translateY(-5px);box-shadow:0 4px 12px rgba(0,0,0,.1);}
+/* Accordion / Tabs override */
+.ui-accordion .ui-accordion-header{background:var(--primary);color:#fff;border:none;padding:.75rem 1rem;margin:0;border-radius:4px 4px 0 0;}
+.ui-accordion .ui-accordion-content{padding:1rem;border:1px solid #ddd;border-top:none;}
+.ui-tabs .ui-tabs-nav{display:flex;gap:.5rem;}
+.ui-tabs .ui-tabs-tab{background:var(--primary);border:none;border-radius:4px 4px 0 0;}
+.ui-tabs .ui-tabs-anchor{padding:.5rem 1rem;color:#fff;}
+/* Footer */
+.site-footer{background:var(--primary);color:#eee;padding:1rem 0;text-align:center;font-size:.9rem;margin-top:3rem;}
+/* Responsive */
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;}
+  .menu-toggle{display:block;}
+  .nav-list{flex-direction:column;position:absolute;top:100%;right:0;background:#fff;width:200px;border:1px solid #ddd;display:none;}
+  .nav-list.active{display:flex;}
+}
+/* Animations */
+@keyframes fadeInUp{from{opacity:0;transform:translate3d(0,20px,0);}to{opacity:1;transform:translate3d(0,0,0);}}
+
+.custom-img {
+  width: 400px !important;
+  height: auto !important;
+  display: block;
+}
+
+.influencer-img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.custom-img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Index.html slider görselleri için özel class */
+.hero-img {
+  width: 1%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider alt açıklama yazıları */
+.slider-caption {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Özellik kartları için ikon/görsel */
+.feature-card img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.hero-slider {
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.site-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.site-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.site-card:hover {
+  border-color: #0066cc;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.site-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.site-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.site-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.auth-tabs {
+  margin-top: 40px;
+}
+
+.auth-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+.auth-form label {
+  font-weight: 600;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #555;
+}
+
+.chessboard-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  border: 2px solid #444;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chessboard div {
+  width: 50px;
+  height: 50px;
+}
+
+.chessboard div:nth-child(even) {
+  background-color: #f0d9b5;
+}
+
+.chessboard div:nth-child(odd) {
+  background-color: #b58863;
+}
+
+#pawn {
+  width: 40px;
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  cursor: grab;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+
+.intro-section {
+  background: linear-gradient(to right, #f0f0f0, #e6e6e6);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.intro-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.intro-section .btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.intro-section .btn:hover {
+  background-color: #555;
+}
+

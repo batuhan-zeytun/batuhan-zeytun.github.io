@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <title>Chess World – Chess Openings</title>
+  <style>
+    .openings-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+    
+    .opening-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    
+    .opening-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .opening-image {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #e8e8e8;
+    }
+    
+    .opening-content {
+      padding: 1.5rem;
+    }
+    
+    .opening-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    
+    .opening-info {
+      margin-bottom: 1rem;
+      color: #666;
+    }
+    
+    .opening-aims {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    
+    .opening-aims h4 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    
+    .opening-aims ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: #666;
+    }
+
+    .search-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .search-input {
+      width: 100%;
+      max-width: 500px;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .opening-moves {
+      background: #e8f4f8;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-family: monospace;
+    }
+
+    .opening-moves h4 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">Chess World</h1>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About & Contact</a></li>
+        <li><a href="influencers.html">Influencers</a></li>
+        <li><a href="pieces.html">Pieces</a></li>
+        <li><a href="moves.html">Moves</a></li>
+        <li><a href="gamesites.html">Game Sites</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 data-aos="fade-up">Popular Chess Openings</h2>
+  
+  <div class="search-container" data-aos="fade-up">
+    <input type="text" class="search-input" id="opening-search" placeholder="Search openings (e.g., Sicilian, Ruy Lopez, Queen's Gambit)">
+  </div>
+  
+  <div class="openings-container">
+    <!-- Sicilian Defense -->
+    <div class="opening-card" data-aos="fade-up">
+      <img src="public/images/sicillianboard.gif" alt="Sicilian Defense Position" class="opening-image">
+      <div class="opening-content">
+        <h3 class="opening-title">Sicilian Defense</h3>
+        <p class="opening-info">
+          The Sicilian Defense is one of the most popular and aggressive responses to 1.e4. It begins with 1.e4 c5, where Black immediately challenges White's central control.
+        </p>
+        <div class="opening-moves">
+          <h4>Main Line:</h4>
+          <p>1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3</p>
+        </div>
+        <div class="opening-aims">
+          <h4>Key Aims:</h4>
+          <ul>
+            <li>Challenge White's central control</li>
+            <li>Create an asymmetrical position</li>
+            <li>Develop counterplay on the queenside</li>
+            <li>Prepare for a dynamic middlegame</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ruy Lopez -->
+    <div class="opening-card" data-aos="fade-up">
+      <img src="public/images/ruylopez.gif" alt="Ruy Lopez Position" class="opening-image">
+      <div class="opening-content">
+        <h3 class="opening-title">Ruy Lopez</h3>
+        <p class="opening-info">
+          The Ruy Lopez (Spanish Opening) is one of the oldest and most respected openings in chess. It begins with 1.e4 e5 2.Nf3 Nc6 3.Bb5.
+        </p>
+        <div class="opening-moves">
+          <h4>Main Line:</h4>
+          <p>1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O</p>
+        </div>
+        <div class="opening-aims">
+          <h4>Key Aims:</h4>
+          <ul>
+            <li>Develop pieces harmoniously</li>
+            <li>Control the center</li>
+            <li>Prepare for kingside castling</li>
+            <li>Create pressure on Black's e5 pawn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Queen's Gambit -->
+    <div class="opening-card" data-aos="fade-up">
+      <img src="public/images/queensgambit.gif" alt="Queen's Gambit Position" class="opening-image">
+      <div class="opening-content">
+        <h3 class="opening-title">Queen's Gambit</h3>
+        <p class="opening-info">
+          The Queen's Gambit is a classic opening that begins with 1.d4 d5 2.c4. It's known for its strategic complexity and rich positional play.
+        </p>
+        <div class="opening-moves">
+          <h4>Main Line:</h4>
+          <p>1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5</p>
+        </div>
+        <div class="opening-aims">
+          <h4>Key Aims:</h4>
+          <ul>
+            <li>Control the center with pawns</li>
+            <li>Develop pieces behind the pawn structure</li>
+            <li>Create pressure on Black's queenside</li>
+            <li>Prepare for a strategic middlegame</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- French Defense -->
+    <div class="opening-card" data-aos="fade-up">
+      <img src="public/images/French Defense.gif" alt="French Defense Position" class="opening-image">
+      <div class="opening-content">
+        <h3 class="opening-title">French Defense</h3>
+        <p class="opening-info">
+          The French Defense is a solid and strategic opening that begins with 1.e4 e6. It's known for its closed positions and strategic complexity.
+        </p>
+        <div class="opening-moves">
+          <h4>Main Line:</h4>
+          <p>1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5</p>
+        </div>
+        <div class="opening-aims">
+          <h4>Key Aims:</h4>
+          <ul>
+            <li>Create a solid pawn structure</li>
+            <li>Develop the light-squared bishop</li>
+            <li>Prepare for queenside counterplay</li>
+            <li>Maintain a strong center</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Caro-Kann Defense -->
+    <div class="opening-card" data-aos="fade-up">
+      <img src="public/images/Caro-Kann Defense.gif" alt="Caro-Kann Defense Position" class="opening-image">
+      <div class="opening-content">
+        <h3 class="opening-title">Caro-Kann Defense</h3>
+        <p class="opening-info">
+          The Caro-Kann Defense is a solid and reliable opening that begins with 1.e4 c6. It's known for its solid pawn structure and defensive strength.
+        </p>
+        <div class="opening-moves">
+          <h4>Main Line:</h4>
+          <p>1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4</p>
+        </div>
+        <div class="opening-aims">
+          <h4>Key Aims:</h4>
+          <ul>
+            <li>Create a solid pawn structure</li>
+            <li>Develop pieces safely</li>
+            <li>Maintain a strong center</li>
+            <li>Prepare for counterplay</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Chess World. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.4/gsap.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+  // Initialize AOS
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
+  // Search functionality
+  document.getElementById('opening-search').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const cards = document.querySelectorAll('.opening-card');
+    
+    cards.forEach(card => {
+      const title = card.querySelector('.opening-title').textContent.toLowerCase();
+      const info = card.querySelector('.opening-info').textContent.toLowerCase();
+      
+      if (title.includes(searchTerm) || info.includes(searchTerm)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
